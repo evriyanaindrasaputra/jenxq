@@ -1,6 +1,10 @@
 {
   "name": "jenxq",
   "version": "0.1.0",
+  "author": {
+    "name": "Eindrasap",
+    "url": "https://twitter.com/eindrasap"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -18,5 +22,12 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "husky": "^8.0.2",
+    "prettier": "^2.8.1",
+    "pretty-quick": "^3.1.3"
   }
 }
