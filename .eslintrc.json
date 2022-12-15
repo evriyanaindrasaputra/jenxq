@@ -1,3 +1,16 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "kentcdodds",
+    "kentcdodds/react",
+    "kentcdodds/jsx-a11y",
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:@next/next/recommended"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "@next/next/no-img-element": ["off"],
+    "new-cap": ["off"]
+  }
 }
