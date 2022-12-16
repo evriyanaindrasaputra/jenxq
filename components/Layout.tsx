@@ -9,8 +9,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <section className="min-h-screen flex flex-col dark:bg-gray-800 bg-gray-100 ">
       <Header />
-      {children}
-      <footer>Hallo Footer</footer>
+      <div className="mx-auto max-w-4xl px-2 pt-20 md:px-1">{children}</div>
     </section>
   );
 };

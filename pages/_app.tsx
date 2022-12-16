@@ -4,6 +4,7 @@ import { DefaultSeo } from 'next-seo';
 import { ThemeProvider } from 'next-themes';
 import Head from 'next/head';
 import React from 'react';
+import { Toaster } from '#/components/Toast';
 import defaultSEOConfig from '_content/next-seo.config';
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -17,6 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <DefaultSeo {...defaultSEOConfig} />
       <Component {...pageProps} />
+      <Toaster position="top-center" />
     </ThemeProvider>
   );
 }
