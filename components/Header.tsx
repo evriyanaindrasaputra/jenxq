@@ -3,9 +3,9 @@ import clsx from 'clsx';
 import { useTheme } from 'next-themes';
 import { BiMoon, BiSun } from 'react-icons/bi';
 import { ImGithub } from 'react-icons/im';
+import { cn } from '#/lib/utils';
 import Button from './Button/Button';
 import ButtonLink from './Button/ButtonLink';
-import { cn } from '#/lib/utils';
 
 export default function Header() {
   const { resolvedTheme, setTheme } = useTheme();
